@@ -53,15 +53,13 @@ class P2P:
 if __name__ == "__main__":
     import sys
 
-    # Pede as configurações iniciais
     my_door = int(input("In which door will this node run on? (ex: 5000): "))
     my_name = input("Whats your name?: ")
 
-    # Inicia o nó
     node = P2P(my_door, my_name)
     node.start()
 
-    time.sleep(1) # Pequena pausa para o servidor subir
+    time.sleep(1) 
 
     print(f"\n--- Commands: 'send' to send a message or 'exit' to end communication ---")
 
